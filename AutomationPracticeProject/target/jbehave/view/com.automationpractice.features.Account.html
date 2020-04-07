@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>com.automationpractice.features.Account</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">com/automationpractice/features/Account.story</div>
+<div class="beforeStorySteps">
+</div>
+<div class="scenario">
+<h2>Scenario: The user should register a new account successfully</h2>
+<div class="step successful">Given I navigate to Home page</div>
+<div class="step successful">And I navigate to Register New Account for <span class="step parameter">Jhon5@outlook.com</span></div>
+<div class="step successful">When I fill my details in the Register form</div>
+<div class="step successful">And I submit the Register New Account</div>
+<div class="step successful">Then my account is registered successfully</div>
+</div>
+<div class="scenario">
+<h2>Scenario: An unregistered user should not have access to the application</h2>
+<div class="step successful">Given I navigate to Home page</div>
+<div class="step successful">When I Sign in with user <span class="step parameter">UserDoesNotExist@outlook.com</span></div>
+<div class="step successful">Then I am unable to log on the application</div>
+</div>
+<div class="scenario">
+<h2>Scenario: The user should not be able to create duplicated account</h2>
+<div class="step successful">Given I navigate to Home page</div>
+<div class="step successful">When I navigate to Register duplicated account for <span class="step parameter">Jhon123456@outlook.com</span></div>
+<div class="step successful">Then I receive an error message indicating the email address is already registered</div>
+</div>
+<div class="scenario">
+<h2>Scenario: User should not be able to log on without password</h2>
+<div class="step successful">Given I navigate to Home page</div>
+<div class="step successful">When I log with only my email <span class="step parameter">Jhon123456@outlook.com</span></div>
+<div class="step successful">Then I am unable to log on the application</div>
+</div>
+<div class="afterStorySteps">
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

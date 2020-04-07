@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Mon Apr 06 23:54:44 BRT 2020
+threads=1
+total=9000
+com/automationpractice/features/StarWars.story=9000
+threadAverage=9000
